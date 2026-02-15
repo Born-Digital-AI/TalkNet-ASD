@@ -35,7 +35,8 @@ def nms_(dets, thresh):
         inds = np.where(ovr <= thresh)[0]
         order = order[inds + 1]
 
-    return np.array(keep).astype(np.int)
+    # NumPy 2.x removed np.int; builtin int keeps equivalent behavior here.
+    return np.array(keep).astype(int)
 
 
 def decode(loc, priors, variances):

@@ -6,6 +6,7 @@ scikit-learn
 tqdm
 scenedetect
 opencv-python
+pandas
 python_speech_features
 torchvision
 ffmpeg
